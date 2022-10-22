@@ -8,13 +8,12 @@ a {
     text-decoration: none;
 }
 .medsos {
-    padding:10px 0;
-    background-color: #0023ff;
+    padding:0;
+    background-color: #173a85;
 }
 .medsos ul li {
     display: inline-block;
-    color: rgb(255, 255, 255);
-    margin-right: 20px;
+    margin-right: 0;
 }
 .container {
     width:80%;
@@ -27,8 +26,8 @@ a {
 }
 header h1 {
     float: left;
-    padding:15px 0;
-    color: #0023ff;
+    /* padding:15px 0; */
+    color: #173a85;
 }
 header ul {
     float: right;
@@ -39,41 +38,77 @@ header ul li {
     padding-right: 0.09px 0.05px;
 }
 header ul li a {
-    padding: 25px 20px;
+    padding: 10px 20px;
     display: inline-block;
 }
 header ul li a:hover {
-    background-color: #0023FF;
-    color: #000000;
+    background-color: #173a85;
+    color: #ffffff;
 }
+
+nav {
+    margin:0px;
+    width: 100%;
+    font-family: arial;
+}
+nav ul {
+    background:#37988e00;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    width: 80%;
+ }
+nav ul li{
+    float:left;
+}
+nav ul li:hover{
+    background:#71b2dd;
+}
+nav ul li:hover a{
+     color:rgb(255, 255, 255);
+}
+nav ul li a{
+     display: block;
+     padding: 25px;
+     padding-bottom: 15%;
+     padding-top: 15%;
+     color: #fff;
+     text-decoration: none;
+}
+
 .active {
-    background-color: #0023ff;
-    color: #00ffea;
+    background-color: #173a85;
+    color: #00fff2;
 }
 .banner {
-    height: 60vh;
+    height:69vh;
     background-image: url('../img/banner.jpg');
     background-size: cover;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px auto;
 }
 .banner:after {
     content:'';
     display: block;
-    position: absolute;
-    top: 0;
+    position:sticky;
+    padding-top: 70%;
     left: 0;
     right: 0;
     bottom: 0;
     background-color: rgb(100, 203, 255, .6);
 }
 .banner h2 {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-align: center;
     z-index: 1;
-    padding: 20px 25px;
-    border:3px solid rgb(0, 0, 0);
+    padding: 20px 50px;
+    border:3px solid rgb(255, 255, 255);
+    margin-top: 15%;
+    margin-left: -1%;
+    box-shadow: #223081;
 }
 section {
     padding: 50px 0;
@@ -184,7 +219,7 @@ footer {
     animation: puterin .8s linear infinite;;
 }
 .label {
-    background-color: #0051ff;
+    background-color: #173a85;
     font-size: 15px;
     padding-bottom: 10px;
     padding-top: 10px;
@@ -212,4 +247,16 @@ footer {
         float: none;
     }
     
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    height: 40%;
+}
+
+.li_h {
+    height: 37px;
 }
